@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import type { NavItem } from './components/ui';
+import Topbar from './components/Topbar';
 
 const App: React.FC = () => {
   const navItems: NavItem[] = [
@@ -16,11 +17,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen ">
+      <Topbar />
       <Navbar
         logo={{ src: '/assets/Logo.svg', alt: 'Bistro Bliss Logo' }}
         items={navItems}
         onItemClick={handleItemClick}
+
       />
       <main>
         {/* <HeroSection
