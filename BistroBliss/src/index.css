@@ -1,1 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
+
+
+/* Custom Styles for Bistro Bliss Theme */
+:root {
+  --neutral-01: #FFFFFF;
+  --neutral-02: #f9f9f7;
+  --neutral-03: #dbdfd0;
+  --neutral-04: #A7A747;
+  --neutral-05: #737865;
+  --neutral-06: #414536;
+  --neutral-07: #2c2f24;
+  --neutral-08: #394245;
+  --primary: #AD343E;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--neutral-01);
+  color: var(--neutral-05);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: var(--neutral-05);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* .btn-primary {
+  @apply bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-red-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-[var(--neutral-02)] text-[var(--neutral-05)] px-6 py-3 rounded-full hover:bg-gray-200 transition-colors;
+}
+
+.navbar {
+  @apply bg-[var(--neutral-07)] text-[var(--neutral-01)] shadow-md;
+}
+
+.navbar .nav-item {
+  @apply hover:text-gray-300 transition-colors;
+}
+
+.navbar .nav-item.active {
+  @apply font-bold;
+}
+
+.hero-section {
+  @apply relative bg-cover bg-center text-center text-white;
+}
+
+.hero-section .content {
+  @apply absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center;
+}
+
+.card {
+  @apply bg-[var(--neutral-01)] p-6 rounded-lg shadow-md text-center;
+}
+
+.category-card {
+  @apply bg-[var(--neutral-01)] p-6 rounded-lg shadow-md;
+}
+
+.footer {
+  @apply bg-[var(--neutral-04)] text-[var(--neutral-01)] p-6 flex justify-between;
+}
+
+.footer .footer-section {
+  @apply space-y-2;
+}
+
+.footer .social-icons a {
+  @apply text-[var(--neutral-01)] hover:text-[var(--primary)] transition-colors;
+} */
