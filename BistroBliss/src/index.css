@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--neutral-01);
   color: var(--neutral-05);
   line-height: 1.6;

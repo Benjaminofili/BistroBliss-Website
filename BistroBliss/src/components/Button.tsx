@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({
     lg: 'text-lg px-6 py-3',
   }[size as Size];
   const variantClasses = {
-    primary: 'bg-[var(--neutral-02)] text-[var(--neutral-05)] ',
-    secondary: 'bg-[var(--neutral-03)] text-[var(--neutral-05)] hover:bg-[var(--neutral-04)]',
+    primary: 'bg-[var(--neutral-02)] text-[var(--neutral-07)] font-semibold ',
+    secondary: 'bg-[var(--neutral-03)] text-[var(--neutral-07)] hover:bg-[var(--neutral-04)]',
     ghost: 'bg-transparent text-[var(--primary)] border border-[var(--primary)] ' +
     (disableHover ? '' : 'hover:bg-[var(--primary)] hover:text-[var(--neutral-01)]'),  }[variant as Variant];
 

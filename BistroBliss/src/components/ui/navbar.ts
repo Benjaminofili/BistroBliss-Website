@@ -9,4 +9,5 @@ export interface NavbarProps {
   logo?: { src: string; alt?: string };
   items: NavItem[];
   onItemClick?: (item: NavItem) => void;
+  isActive?: boolean; 
 }

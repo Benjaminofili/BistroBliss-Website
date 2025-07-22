@@ -3,27 +3,30 @@ import type { NavbarProps } from './ui';
 import type { NavItem } from './ui';
 import Button from './Button';
 
-const Navbar: React.FC<NavbarProps> = ({ logo, items, onItemClick }) => {
+const Navbar: React.FC<NavbarProps> = ({ logo, items, onItemClick, isActive = false }) => {
+  const navClass = `p-6 flex justify-between items-center shadow-md ${isActive ? 'bg-[var(--neutral-03)]' : 'bg-[var(--neutral-02)]'}`;
+
   return (
-    <nav className="bg-[var(--neutral-02)] text-[var(--neutral-01)] p-4 flex justify-between items-center shadow-md">
-      <div className="flex items-center">
-        {logo && <img src={logo.src} alt={logo.alt} className="h-10 mr-4" />}
-        <span className="text-xl font-bold text-[var(--neutral-05)]" style={{ fontFamily: '"Playfair Display", serif', fontWeight: 600, fontStyle: 'italic' }}>Bistro Bliss</span>
+    <nav className={navClass}>
+      <div className="flex items-center gap-6">
+        {logo && <img src={logo.src} alt={logo.alt} className="h-10" />}
+        <span className="text-xl font-bold text-[var(--neutral-07)]" style={{ fontFamily: '"Playfair Display", serif', fontWeight: 600, fontStyle: 'italic' }}>Bistro Bliss</span>
       </div>
-      <ul className="flex space-x-6 text-[var(--neutral-05)]">
+      <ul className="flex items-center gap-8 text-[var(--neutral-07)] font-semibold">
         {items.map((item: NavItem, index: number) => (
-          <li key={index} className={item.isActive ? 'font-bold' : ''}>
+          <li key={index} className={item.isActive ? 'font-bold bg-[var(--neutral-03)] px-4 py-2 rounded-full ' : ''}>
             <a
               href={item.href}
               onClick={() => onItemClick?.(item)}
-              className="hover:text-gray-300 transition-colors"
+              
             >
               {item.icon} {item.text}
             </a>
           </li>
         ))}
       </ul>
-      <Button label="Book A Table" disableHover={true} />    </nav>
+      <Button label="Book A Table" disableHover={true} />
+    </nav>
   );
 };
 

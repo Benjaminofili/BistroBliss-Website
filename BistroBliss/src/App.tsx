@@ -18,7 +18,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar
-        logo={{ src: 'https://via.placeholder.com/50', alt: 'Bistro Bliss Logo' }}
+        logo={{ src: '/assets/Logo.svg', alt: 'Bistro Bliss Logo' }}
         items={navItems}
         onItemClick={handleItemClick}
       />
