@@ -1,6 +1,5 @@
 export interface CategoryCardProps {
-  imageUrl: string;
+  icon: string;
   title: string;
-  itemCount?: number;
   onClick?: () => void;
 }
