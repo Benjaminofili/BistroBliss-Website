@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import type { NavItem } from './components/ui';
 import Topbar from './components/Topbar';
+import HeroSection from './components/HeroSection';
 
 const App: React.FC = () => {
   const navItems: NavItem[] = [
@@ -26,15 +27,14 @@ const App: React.FC = () => {
 
       />
       <main>
-        {/* <HeroSection
+        <HeroSection
           title="Best food for your taste"
           subtitle="Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven."
-          backgroundImageUrl="https://via.placeholder.com/1200x400"
           ctaButtons={[
-            { label: 'Book A Table', variant: 'primary', onClick: () => alert('Booked!') },
-            { label: 'Explore Menu', variant: 'secondary', onClick: () => alert('Menu explored!') },
+            { label: 'Book A Table', variant: 'secondary', onClick: () => alert('Booked!') },
+            { label: 'Explore Menu', variant: 'ghost', onClick: () => alert('Menu explored!') },
           ]}
-        /> */}
+        />
         {/* <MenuSection />
         <AboutSection />
         <ServicesSection />

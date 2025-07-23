@@ -24,10 +24,10 @@ const Button: React.FC<ButtonProps> = ({
   }[size];
 
   const variantClasses = {
-    primary: `bg-[var(--neutral-02)] text-[var(--neutral-07)] font-semibold ${
+    primary: `bg-[var(--neutral-02)] text-[var(--neutral-07)] outline-3 font-semibold ${
       disableHover ? '' : 'hover:bg-[var(--neutral-03)]'
     }`,
-    secondary: `bg-[var(--neutral-03)] text-[var(--neutral-07)] ${
+    secondary: `bg-[var(--red1)] text-[var(--primary)] outline-none font-semibold] ${
       disableHover ? '' : 'hover:bg-[var(--neutral-04)]'
     }`,
     ghost: `bg-transparent text-[var(--primary)] border border-[var(--primary)] ${
