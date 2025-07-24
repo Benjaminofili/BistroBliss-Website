@@ -8,3 +8,4 @@ export * from './footer';
 export * from './search-bar';
 export * from './badge';
 export * from './modal';
+export * from './about-us';

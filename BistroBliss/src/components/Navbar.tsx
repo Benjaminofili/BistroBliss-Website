@@ -8,9 +8,9 @@ const Navbar: React.FC<NavbarProps> = ({ logo, items, onItemClick }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center bg-[var(--neutral-02)]">
       <nav className={`
-        py-4 md:py-6 flex justify-between items-center  bg-[var(--neutral-02)] 
+        py-4 md:py-6 flex justify-between items-center   
         w-full max-w-[1440px]
         px-4 sm:px-6 lg:px-8 xl:px-[var(--content-padding)]
       `}>

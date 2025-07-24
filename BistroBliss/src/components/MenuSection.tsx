@@ -34,7 +34,7 @@ const MenuSection: React.FC = () => {
   return (
     <section className="py-16 sm:py-20 md:py-24 lg:py-28 text-center">
       <div className="container mx-auto px-4 sm:px-8">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-12" style={{ fontFamily: '"Playfair Display", serif' }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold  mb-12" style={{ fontFamily: '"Playfair Display", serif',color: '#2c2f24',  }}>
           Browse Our Menu
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
