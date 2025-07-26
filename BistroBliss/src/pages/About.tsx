@@ -1,24 +1,18 @@
-// src/pages/Home.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import type { NavItem } from '../components/ui';
 import Topbar from '../components/Topbar';
-import HeroSection from '../components/HeroSection';
-import MenuSection from '../components/MenuSection';
-import AboutUs from '../components/AboutUs'; 
-import Services from '../components/Services';
-import Delivery from '../components/Delivery';
-import BlogSection from '../components/Blog';
-import Testimonials from '../components/Testimonial';
+import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
+import heroimage from '../assets/Aboutpage/Resturantfood.webp';
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
     const navigate = useNavigate();
 
     const navItems: NavItem[] = [
-        { text: 'Home', href: '/', isActive: true },
-        { text: 'About', href: '/about' },
+        { text: 'Home', href: '/', isActive: false },
+        { text: 'About', href: '/about', isActive: true },
         { text: 'Menu', href: '/menu' },
         { text: 'Pages', href: '/pages' },
         { text: 'Contact', href: '/contact' },
@@ -26,7 +20,7 @@ const Home: React.FC = () => {
 
     const handleItemClick = (item: NavItem) => {
         console.log(`Navigating to ${item.text}`);
-        
+
         // Check if it's an external link or anchor
         if (item.href.startsWith('http://') || item.href.startsWith('https://')) {
             window.open(item.href, '_blank', 'noopener noreferrer');
@@ -50,18 +44,15 @@ const Home: React.FC = () => {
                 items={navItems}
                 onItemClick={handleItemClick}
             />
-            <main>
-                <HeroSection />
-                <MenuSection />
-                <AboutUs />
-                <Services />
-                <Delivery />
-                <Testimonials />
-                <BlogSection />
-                <Footer />
+            <main className="flex-grow">
+                <AboutUs
+                    image={heroimage}
+                    imageAlt="Different restaurant view"
+                />
             </main>
+            <Footer />
         </div>
     );
 };
 
-export default Home;
+export default About;

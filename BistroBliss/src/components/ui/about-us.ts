@@ -6,4 +6,6 @@ export interface AboutUsProps {
     email: string;
     address: string;
   };
+  image?: string;
+  imageAlt?: string;
 }

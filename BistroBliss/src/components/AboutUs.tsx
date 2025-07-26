@@ -15,7 +15,9 @@ const AboutUs: React.FC<AboutUsProps> = ({
     phone: "(414) 857 - 0107",
     email: "happytummy@restaurant.com",
     address: "837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles"
-  }
+  },
+  image = aboutImg,
+  imageAlt = "Restaurant dish"
 }) => {
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-28 bg-[#F9F9F7]">
@@ -24,8 +26,8 @@ const AboutUs: React.FC<AboutUsProps> = ({
           {/* Image Section */}
           <div className="relative w-full lg:w-[55%] xl:w-[599px] h-[400px] sm:h-[450px] md:h-[500px] lg:h-[566px]">
             <img
-              src={aboutImg}
-              alt="Restaurant dish"
+              src={image}
+              alt={imageAlt}
               className="w-full h-full object-cover rounded-lg"
             />
             
