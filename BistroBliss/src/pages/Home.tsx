@@ -1,12 +1,16 @@
 // src/pages/Home.tsx
 import React from 'react';
 import Navbar from '../components/Navbar';
+import type { NavItem } from '../components/ui';
 import Topbar from '../components/Topbar';
 import HeroSection from '../components/HeroSection';
 import MenuSection from '../components/MenuSection';
 import AboutUs from '../components/AboutUs'; 
 import Services from '../components/Services';
-import type { NavItem } from '../components/ui';
+import Delivery from '../components/Delivery';
+import BlogSection from '../components/Blog';
+import Testimonials from '../components/Testimonial';
+import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
     const navItems: NavItem[] = [
@@ -34,6 +38,10 @@ const Home: React.FC = () => {
                 <MenuSection />
                 <AboutUs />
                 <Services />
+                <Delivery />
+                <Testimonials/>
+                <BlogSection />
+                <Footer />
             </main>
         </div>
     );
