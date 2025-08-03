@@ -8,4 +8,5 @@ export interface AboutUsProps {
   };
   image?: string;
   imageAlt?: string;
+  showButton?: boolean;
 }

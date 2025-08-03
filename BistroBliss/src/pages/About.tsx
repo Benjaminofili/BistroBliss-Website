@@ -6,6 +6,10 @@ import Topbar from '../components/Topbar';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
 import heroimage from '../assets/Aboutpage/Resturantfood.webp';
+import VideoHero from '../components/VideoHero ';
+import RestaurantStats from '../components/RestaurantStats';
+import Testimonials from '../components/Testimonial';
+
 
 const About: React.FC = () => {
     const navigate = useNavigate();
@@ -46,9 +50,15 @@ const About: React.FC = () => {
             />
             <main className="flex-grow">
                 <AboutUs
+                    showButton={false}
                     image={heroimage}
                     imageAlt="Different restaurant view"
                 />
+                <VideoHero />
+                <RestaurantStats />
+                <Testimonials />
+
+
             </main>
             <Footer />
         </div>

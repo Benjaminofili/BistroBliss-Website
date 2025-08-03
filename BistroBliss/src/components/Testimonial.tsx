@@ -59,7 +59,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
   className = ""
 }) => {
   return (
-    <section className={`py-20 px-8 bg-gray-50 ${className}`}>
+    <section className={`py-20 px-8 bg[var( --neutral-01)] ${className}`}>
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-center text-gray-800 mb-16">

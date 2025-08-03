@@ -17,7 +17,8 @@ const AboutUs: React.FC<AboutUsProps> = ({
     address: "837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles"
   },
   image = aboutImg,
-  imageAlt = "Restaurant dish"
+  imageAlt = "Restaurant dish",
+  showButton = true
 }) => {
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-28 bg-[#F9F9F7]">
@@ -75,9 +76,11 @@ const AboutUs: React.FC<AboutUsProps> = ({
               ))}
             </div>
 
-            <button className="mt-6 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#2C2F24] text-[#2C2F24] rounded-full font-medium hover:bg-[#2C2F24] hover:text-white transition-all duration-300 text-sm sm:text-base">
-              More About Us
-            </button>
+            {showButton && (
+              <button className="mt-6 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#2C2F24] text-[#2C2F24] rounded-full font-medium hover:bg-[#2C2F24] hover:text-white transition-all duration-300 text-sm sm:text-base">
+                More About Us
+              </button>
+            )}
           </div>
         </div>
       </div>
