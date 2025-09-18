@@ -1,4 +1,14 @@
 import React, { useState } from 'react';
+// Import your images with simple naming
+import M1 from '../assets/MenuPage/Dishes/M1.webp';
+import M2 from '../assets/MenuPage/Dishes/M2.webp';
+import M3 from '../assets/MenuPage/Dishes/M3.webp';
+// import M4 from '../assets/MenuPage/Dishes/M4.webp';
+import M5 from '../assets/MenuPage/Dishes/M5.webp';
+import M6 from '../assets/MenuPage/Dishes/M6.webp';
+import M7 from '../assets/MenuPage/Dishes/M7.webp';
+import M8 from '../assets/MenuPage/Dishes/M8.webp';
+
 
 interface MenuItem {
   id: string;
@@ -46,7 +56,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Fried Eggs',
       price: 9.99,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M1, // Use M1-M8 naming
       category: 'breakfast',
       isAvailable: true
     },
@@ -55,7 +65,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Hawaiian Pizza',
       price: 15.99,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M2,
       category: 'main-dishes',
       isAvailable: true
     },
@@ -64,7 +74,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Martinez Cocktail',
       price: 7.25,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M3,
       category: 'drinks',
       isAvailable: true
     },
@@ -73,7 +83,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Butterscotch Cake',
       price: 20.99,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M5,
       category: 'desserts',
       isAvailable: true
     },
@@ -82,7 +92,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Mint Lemonade',
       price: 5.89,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M5,
       category: 'drinks',
       isAvailable: true
     },
@@ -91,7 +101,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Chocolate Icecream',
       price: 18.05,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M6,
       category: 'desserts',
       isAvailable: true
     },
@@ -100,7 +110,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Cheese Burger',
       price: 12.55,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M7,
       category: 'main-dishes',
       isAvailable: true
     },
@@ -109,7 +119,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({
       name: 'Classic Waffles',
       price: 12.99,
       description: 'Made with eggs, lettuce, salt, oil and other ingredients.',
-      image: '/api/placeholder/300/250',
+      image: M8,
       category: 'desserts',
       isAvailable: true
     }
@@ -201,10 +211,6 @@ const MenuSection: React.FC<MenuSectionProps> = ({
                     alt={item.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = '/api/placeholder/300/250';
-                    }}
                   />
                   {!item.isAvailable && (
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">

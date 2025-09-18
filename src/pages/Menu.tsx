@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import type { NavItem } from '../components/ui';
 import Topbar from '../components/Topbar';
 import MenuHero from '../components/MenuHero';
+import OrderApps from '../components/OrderApps';
+
 import Footer from '../components/Footer';
 
 const Menu: React.FC = () => {
@@ -45,6 +47,7 @@ const Menu: React.FC = () => {
             />
             <main className="flex-grow">
                 <MenuHero />
+                <OrderApps />
                 
             </main>
             <Footer />

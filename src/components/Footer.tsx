@@ -134,6 +134,7 @@ const Footer: React.FC<FooterProps> = ({
                                         src={image}
                                         alt={`Instagram post ${index + 1}`}
                                         className="w-full h-full object-cover"
+                                        loading="lazy"
                                     />
                                 </div>
                             ))}
