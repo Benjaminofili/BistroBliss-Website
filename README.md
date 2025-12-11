@@ -9,8 +9,14 @@
 
 ## 📸 Screenshots
 
-![Home Page](./src/assets/herobg.webp)
-*(Note: Replace this line with actual screenshots of your application)*
+![Home Page]
+<img width="1855" height="883" alt="image" src="https://github.com/user-attachments/assets/0dcf4ae6-45c1-4366-ab20-4ca2809d0439" />
+<img width="1866" height="868" alt="image" src="https://github.com/user-attachments/assets/46bdcb01-a4ca-4bf1-a0a4-702adfdf0913" />
+<img width="1597" height="539" alt="image" src="https://github.com/user-attachments/assets/c1c1e651-c2f4-474d-8da7-0bc36a8b701d" />
+<img width="1443" height="851" alt="image" src="https://github.com/user-attachments/assets/68b8cc42-e0f6-4675-b8c6-e480366ce3f1" />
+<img width="1548" height="846" alt="image" src="https://github.com/user-attachments/assets/7cef3c9f-a2f5-4e93-a928-e2966f20203f" />
+
+
 
 ## ✨ Features
 
@@ -48,54 +54,71 @@ Follow these steps to set up the project locally.
    git clone [https://github.com/yourusername/bistro-bliss.git](https://github.com/yourusername/bistro-bliss.git)
    cd bistro-bliss
 
-   Install dependencies
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
 
-Bash
+ 3. **Run the development server**
 
-npm install
-# or
-yarn install
-Start the development server
+   ```bash
+   npm run dev
+   # OR
+   yarn dev
+   ```
 
-Bash
+4. **Open your browser**
+   Navigate to `http://localhost:5173` (or the port shown in your terminal) to view the app.
 
-npm run dev
-# or
-yarn dev
-Open your browser Visit http://localhost:5173 (or the port shown in your terminal).
+## 🔧 Customization
 
-📂 Project Structure
-Plaintext
+### Changing Branding
+You can update the logo and brand name in:
+- `src/components/Navbar.tsx`
+- `src/components/Footer.tsx`
 
-src/
-├── assets/          # Images, SVGs, and global assets
-├── components/      # Reusable UI components (Navbar, Footer, Buttons, etc.)
-│   └── ui/          # TypeScript interfaces/types for components
-├── pages/           # Main page views (Home, About, Menu, Booking)
-├── App.tsx          # Main application component & Routing setup
-├── main.tsx         # Entry point
-└── index.css        # Global styles & Tailwind directives
-🎨 Design System
-The project uses a custom color palette defined in src/index.css:
+### Updating Menu Items
+Menu data is currently stored locally in `src/components/MenuHero.tsx` (or `MenuSection.tsx`). You can modify the `menuItems` array to change dishes, prices, and images.
 
-Primary: White & Neutral tones
+### Theming
+The project uses Tailwind CSS variables for colors. You can adjust the theme in `src/index.css`:
 
-Accent: #AD343E (Red)
+```css
+:root {
+  --primary: #FFFFFF;
+  --red1: #AD343E;
+  --neutral-07: #2c2f24;
+  /* ...other variables */
+}
+```
+## 🤝 Contributing
 
-Typography: Playfair Display (Headings) & Global Sans (Body)
-
-🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the project
+1. **Fork the Project**
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+2. **Create your Feature Branch**
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit your Changes**
 
-Push to the branch (git push origin feature/AmazingFeature)
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+    ````
+4. **Push to the Branch**
 
-Open a Pull Request
+   ```bash
+   git push origin feature/AmazingFeature
+    ````
+5. **Open a Pull Request**
 
-📄 License
-This project is licensed under the MIT License
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Developed with ❤️ for good food and great code.
